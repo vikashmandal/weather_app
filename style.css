@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 30px;
+
+    background: rgba(86, 115, 77, 0.414);
+
+}
+
+.left-container {
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid#222;
+
+}
+
+.today-weather {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+}
+
+form {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border: 1px solid #222;
+    border-radius: 5px;
+
+}
+
+form input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+
+}
+
+form button {
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-left: 1px solid #222;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.location {
+    font-size: 60px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.temperature {
+    font-size: 70px;
+    font-weight: 200;
+
+}
+
+.forecast {
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.day-time {
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.day-time .day {
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.day-time span {
+    font-size: 16px;
+    margin: 0 5px;
+
+}
+
+.day-time .time {
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.city-img {
+    width: 90%;
+    flex: 1;
+    bottom: 0;
+    border-radius: 5px;
+    margin: 20px 0;
+
+}
+
+.city-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #c0bdbd;
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+/* right-container  */
+
+.right-container {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right-top_container {
+    flex: 1;
+
+}
+
+.sub-heading {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid #222;
+
+}
+
+.forecast-data {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+
+}
+
+.forecast-data .single-data {
+    width: 30%;
+    height: 30%;
+    border: 1px solid #222;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+
+    background-color: rgba(86, 115, 77, 0.41)
+}
+
+.single-data h3 {
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.single-data i {
+    height: 30px;
+    font-size: 45px;
+    color: rgba(86, 115, 77, 0.81);
+
+}
+
+.single-data h2 {
+    font-size: 35px;
+    ;
+    font-weight: 300;
+
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width:680px) {
+
+    .container {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+
+    }
+
+    .left-container {
+        flex: 2;
+        align-items: center;
+        justify-content: center;
+        border-right: none;
+
+    }
+
+    footer {
+        margin: 20px 0;
+
+    }
+
+    .sub-heading {
+        text-align: center;
+        border-top: 1px solid #222;
+        background-color: rgba(86, 115, 77, 0.41);
+
+    }
+
+    .city-img {
+        display: none;
+
+    }
+
+    .forecast-data .single-data {
+        width: 48%;
+        height: 25%;
+        margin: 10px 0;
+        justify-content: space-between;
+        background-color: rgba(86, 115, 77, 0.41);
+
+    }
+
+    .forecast-data .single-data i {
+        margin: 20px 0;
+        color: rgba(86, 115, 77, 0.81);
+
+    }
+
+    .forecast-data .single-data h2 {
+        font-size: 70px;
+
+    }
+
+    .pressure {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+
+    }
+
+}
+
+@media only screen and (max-width:310px) {
+
+    .container {
+        padding: 10px 0;
+    }
+
+    .left-container .today-weather {
+        height: 100vh;
+        justify-content: space-between;
+        padding: 20px 0;
+
+    }
+
+    .temperature {
+        font-size: 100px;
+
+    }
+
+    form {
+        margin-bottom: 50px;
+
+    }
+
+    .day-time {
+        margin-top: 50px;
+
+    }
+
+    .forecast-data {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .forecast-data .single-data {
+        width: 100%;
+
+    }
+}

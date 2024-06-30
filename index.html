@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left-container">
+
+            <div class="today-weather">
+
+                <form action="#">
+                    <input class="input-box" type="text" placeholder="Search City">
+                    <button class="button">Search</button>
+                </form>
+
+                <h1 class="location">city</h1>
+                <h1 class="temperature">0&deg;</h1>
+                <h3 class="forecast">clear</h3>
+
+                <div class="day-time">
+                    <h3 class="day">monday</h3>
+                    <span>|</span>
+                    <h3 class="time"></h3>
+                </div>
+
+                <div class="city-img">
+                    <img class="img" src="https://cdn.pixabay.com/photo/2022/01/11/17/04/city-6931092_1280.jpg"
+                        alt="city-img">
+                </div>
+
+                <footer>
+                    <p>Designed and Developed by Vikash Mandal</p>
+                </footer>
+
+            </div>
+
+        </div>
+        <div class="right-container">
+
+            <h2 class="sub-heading">Today Forecast</h2>
+
+            <div class="forecast-data">
+
+                <div class="single-data max-temp">
+                    <h3>Max Temp</h3>
+                    <i class="fa-solid fa-sun"> &uarr;</i>
+                    <h2 class="max-temp-value">0</h2>
+                </div>
+
+                <div class="single-data min-temp">
+                    <h3>Min temp</h3>
+                    <i class="fa-solid fa-sun"> &darr;</i>
+                    <h2 class="min-temp-value">0</h2>
+                </div>
+
+                <div class="single-data clouds">
+                    <h3>Clouds</h3>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2 class="clouds-value">0</h2>
+                </div>
+
+                <div class="single-data lon">
+                    <h3>Longitude</h3>
+                    <i class="fa-solid fa-compass"></i>
+                    <h2 class="lon-value">0</h2>
+                </div>
+
+                <div class="single-data lat">
+                    <h3>Latitude</h3>
+                    <i class="fa-solid fa-compass"></i>
+                    <h2 class="lat-value">0</h2>
+                </div>
+
+                <div class="single-data humidity">
+                    <h3>Humidity</h3>
+                    <i class="fa-solid fa-droplet"></i>
+                    <h2 class="humidity-value">0</h2>
+                </div>
+
+                <div class="single-data visibility">
+                    <h3>Visibility</h3>
+                    <i class="fa-solid fa-eye"></i>
+                    <h2 class="visibility-value">0</h2>
+                </div>
+
+                <div class="single-data wind">
+                    <h3>Wind</h3>
+                    <i class="fa-solid fa-wind"></i>
+                    <h2 class="wind-value">0</h2>
+                </div>
+
+                <div class="single-data pressure">
+                    <h3>Pressure</h3>
+                    <i class="fa-solid">&darr;</i>
+                    <h2 class="pressure-value">0</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
